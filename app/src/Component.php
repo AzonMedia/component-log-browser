@@ -58,12 +58,11 @@ class Component extends BaseComponent implements ComponentInterface, ComponentIn
                 //'additional_template' => '@GuzabaPlatform.LogBrowser/LogBrowserNavigationHook.vue',//here the list of classes will be expanded
             ],
         ];
-        $FrontendRouter->{'/admin'}->add('cms', '@GuzabaPlatform.LogBrowser/LogBrowserAdmin.vue' ,$additional);
+        $FrontendRouter->{'/admin'}->add('log-browser', '@GuzabaPlatform.LogBrowser/LogBrowserAdmin.vue' ,$additional);
 
         $additional = [
             'name'  => 'Logs',
         ];
-        //$FrontendRouter->{'/admin'}->add('cms/*', '@GuzabaPlatform.Cms/CmsAdmin.vue', $additional);// use with this.$route.params.pathMatch
-        $FrontendRouter->{'/admin'}->add('cms/:object_uuid', '@GuzabaPlatform.LogBrowser/LogBrowserAdmin.vue', $additional);// use with this.$route.params.object_uuid
+        $FrontendRouter->{'/admin'}->add('log-browser/:object_uuid', '@GuzabaPlatform.LogBrowser/LogBrowserAdmin.vue', $additional);// use with this.$route.params.object_uuid
     }
 }
