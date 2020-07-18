@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "GuzabaPlatform\\Cms\\": "app/src/"
+            "GuzabaPlatform\\ObjectBrowser\\": "app/src/"
         }
     }
 }
